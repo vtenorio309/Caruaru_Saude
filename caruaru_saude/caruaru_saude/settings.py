@@ -55,7 +55,7 @@ ROOT_URLCONF = 'caruaru_saude.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'C:\Users\micae\eclipse-workspace\Projeto_IOT\caruaru_saude\usuarios\templates\pages'],  # Caminho absoluto para a pasta "pages"
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,6 +67,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'caruaru_saude.wsgi.application'
 
@@ -119,6 +120,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    r'C:\Users\micae\eclipse-workspace\Projeto_IOT\caruaru_saude\usuarios\static',
+]
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
